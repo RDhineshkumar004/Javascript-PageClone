@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+    <style>
+        * {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        li {
+            float: left;
+
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: rgb(206, 199, 199);
+        }
+
+        button {
+            padding: 10px;
+            padding-right: 10px;
+            font-size: medium;
+            border-radius: 10px;
+            justify-content: space-between;
+            cursor: pointer;
+
+        }
+
+        .pont {
+            width: 100%;
+            height: 300px;
+            background-color: white;
+        }
+
+        .grid {
+            display: grid;
+            justify-content: center;
+        }
+
+        .grid1 {
+            grid-column: 2;
+        }
+
+        .grid2 {
+            grid-column: 1;
+        }
+
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .pagination a.active {
+            background-color: red;
+            color: white;
+
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: lightgray;
+        }
+
+        .overflow {
+            background-color: rgb(218, 213, 213);
+            color: black;
+            padding: 15px;
+            width: 700px;
+            height: 640px;
+            overflow: scroll;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div
+            style="display:flex; gap:12px; justify-content: space-between; padding:25px;flex-direction:row;background-color:#7469B6;">
+            <div style="font-size:40px;"><img
+                    src="https://www.javascript.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/js-logo.png"
+                    width="255px">
+                <div style="position:absolute;"></div>
+
+
+                <ul style="font-size: x-large; width:100%; float: left;">
+                    <li><a href="#" style="color: black;">Home</a></li>
+                    <li><a href="#" style="color: black;">Courses</a></li>
+                    <li><a href="#" style="color: black;">About</a></li>
+                    <li><a href="#" style="color: black;">Service</a></li>
+                    <li><a href="#" style="color: black;">Content us</a></li>
+                    <li
+                        style="display: flex; padding-right:80px; justify-content:  space-between; margin-top:11px; width: 980px; height:35px;">
+                        <input type="text" placeholder="search geeksforgeeks.org">
+                    </li>
+                    <li>
+                        <button style="margin-top:6px; font-size: large;">Log in</button>
+                        <button style="padding-right:10px;">Sign in</button>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div>
+        <div>
+            <ul style="background-color:#AD88C6;">
+                <h3>
+                    <li><a href="#">Html</a></li>
+                    <li><a href="#">Css</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">Typescrit</a></li>
+                    <li><a href="#">jQuery</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Bootstrap</a></li>
+                    <li><a href="#">Node JS</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">WordPress</a></li>
+                    <li><a href="#">Web development</a></li>
+                    <li><a href="#">React Native</a></li>
+                    <li><a href="#">JS Framework</a></li>
+                    <li><a href="#">CSS Framework</a></li>
+                    <li><a href="#">Express.js</a></li>
+                    <li><a href="#">MongoDB</a></li>
+                </h3>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="pont">
+        <h1 style="background-color:white; text-align:left; padding:9px;color:black; "><b> Advance JavaScript
+                Tutorial</b></h1>
+        <p>
+        <h2>Learn about the types of JavaScript, vulnerable devices to JavaScript and JavaScript prevention tips</h2>
+        </p>
+
+        <div style="margin:60px;">
+            <button>GLOBAL THREAT LANDSCAPE REPORT 2H 2023</button>
+            <button>SPEAK WITH AN EXPERT</button>
+        </div>
+        <hr>
+        <hr>
+    </div>
+
+
+
+    <div>
+        <div style="background-color:#E1AFD1; width:100%; height:450px; border: 1px solid black; ">
+            <p>
+            <h1 style="color:white; display: flex; width:400px; margin:30px; font-size:55px; ">
+                CELEBRATING..</h1>
+            </p>
+            <p>
+            <h1 style="font-size:70px; margin-left:300px; ">27 years of JavaScript</h1>
+            </p>
+            <p style="font-size:50px; margin-left:950px; ">1,44,231
+
+                libraries and counting...</p>
+
+            <hr>
+            <p>
+            <h1 style="font-size: xx-large; text-align: center; font-style: italic; "> Ready to try JavaScript?..</h1>
+            </p>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="grid">
+
+        <div class="grid2">
+            <h1>JavaScript</h1>
+            <p style="font-size:x-large;">JavaScript (JS) is a lightweight interpreted (or just-in-time compiled)
+                programming language with first-class functions. While it is most well-known as the scripting language
+                for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe
+                Acrobat. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting
+                object-oriented, imperative, and declarative (e.g. functional programming) styles.
+            </p>
+            <p style="font-size:x-large;">JavaScript's dynamic capabilities include runtime object construction,
+                variable parameter lists, function variables, dynamic script creation (via eval), object introspection
+                (via for...in and Object utilities), and source-code recovery (JavaScript functions store their source
+                text and can be retrieved through toString()).</p>
+            <p style="font-size:x-large;"> The standards for JavaScript are the ECMAScript Language Specification
+                (ECMA-262) and the ECMAScript Internationalization API specification (ECMA-402). As soon as one browser
+                implements a feature, we try to document it. This means that cases where some proposals for new
+                ECMAScript features have already been implemented in browsers, documentation and examples in MDN
+                articles may use some of those new features. Most of the time, this happens between the stages 3 and 4,
+                and is usually before the spec is officially published.</p>
+            <p style="font-size:x-large;">JavaScript documentation of core language features (pure ECMAScript, for the
+                most part) includes the following:
+
+            <ul style="background-color: white; font-size: x-large; ">
+                <li> 1.The JavaScript guide</li><br>
+                <li>2.The JavaScript reference</li>
+
+            </ul>
+            </p>
+        </div>
+
+
+        <div class="grid1">
+
+
+            <p> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSVemFV0kr9_102pGlNAp7sQYQ8OAtFB7SBw&s"
+                    alt="">
+            </p>
+            <h1 style="text-align: center; color:rgb(153, 143, 143);">Advertisement</h1>
+            <p>
+                <img src="https://media.geeksforgeeks.org/auth-dashboard-uploads/three90-rightbanner-20240708.png"
+                    alt="">
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="grid">
+        <h1 style="font-size: xx-large;">About JavaScript</h1>
+        <div class="grid2">
+            <div style="font-size: x-large">
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps"
+                    style="text-decoration:underline;">JavaScript first steps</a>
+                <p>Answers some fundamental questions such as "what is JavaScript?", "what does it look like?", and
+                    "what can it
+                    do?", along with discussing key JavaScript features such as variables, strings, numbers, and arrays.
+                </p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks"
+                    style="text-decoration: underline;">JavaScript building blocks</a>
+                <p>Continues our coverage of JavaScript's key fundamental features, turning our attention to
+                    commonly-encountered types of code blocks such as conditional statements, loops, functions, and
+                    events.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous"
+                    style="text-decoration: underline;">Asynchronous JavaScript</a>
+                <p>Discusses asynchronous JavaScript, why it is important, and how it can be used to effectively handle
+                    potential blocking operations such as fetching resources from a server.</p>
+
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs"
+                    style="text-decoration: underline;">Client-side web APIs</a>
+                <p>Explores what APIs are, and how to use some of the most common APIs you'll come across often in your
+                    development work.</p>
+                <a href="#" style="text-decoration: underline;">URL objects</a>
+                <p>The built-in URL class provides a convenient interface for creating and parsing URLs.</p>
+                <p>There are no networking methods that require exactly a URL object,strings are good enough.So
+                    technically,we don’t have to use URL. But sometimes it can be really helpful.</p>
+            </div>
+
+
+
+        </div>
+
+        <div class="grid1">
+            <div class="overflow" style="overflow: scroll; font-size: x-large; background-color: rgb(219, 216, 216); ">
+
+
+                <h3>The JavaScript language</h3>
+                <p>Here we learn JavaScript, starting from scratch and go on to advanced concepts like OOP. </p>
+
+                <p>We concentrate on the language itself here, with the minimum of environment-specific notes.</p>
+                <details>
+
+                    <summary style="color: blue;">
+                        More...
+                    </summary>
+                    <p><a href="#">An introduction</a></p>
+                    <p><a href="#">JavaScript Fundamentals</a></p>
+                    <p><a href="#">Code Quality</a></p>
+                    <p><a href="#">Objects:The basics </a></p>
+                    <p><a href="#">Data Type</a></p>
+
+                </details>
+                <h3>Browser:Document,Events,Inerfaces</h3>
+                <p>Learning how to manage the browser page: add elements, manipulate their size and position,
+                    dynamically create interfaces and interact with the visitor.</p>
+                <details>
+                    <summary style="color: blue;">
+                        More...
+                    </summary>
+                    <p><a href="#">Document</a></p>
+                    <p><a href="#">Intoduction to Events</a></p>
+                    <p><a href="#">UI Events</a></p>
+                    <p><a href="#">Forms,Controls</a></p>
+                    <p><a href="#">Document & Resource Loading</a></p>
+                    <p><a href="#">Miscellaneous</a></p>
+                </details>
+                <h3>Additional articles</h3>
+                <p>List of extra topics that assume you've covered the first two parts of tutorial. There is no clear
+                    hierarchy here, you can read articles in the order you want.</p>
+                <details>
+                    <summary style="color: blue;">
+                        More..
+                    </summary>
+                    <p><a href="#">Frames and windows</a></p>
+                    <p><a href="#">Binary data, files</a></p>
+                    <p><a href="#">Network requests</a></p>
+                    <p><a href="#">Storing data in the browser</a></p>
+                    <p><a href="#">Animation</a></p>
+
+                </details>
+
+            </div>
+
+        </div>
+
+    </div>
+
+ <hr>
+ 
+
+
+
+
+    <div>
+        <h2 style="font-size: xx-large;">Reference...</h2>
+        <p style="font-size: x-large;">Browse the complete JavaScript reference documentation.</p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects"
+            style="text-decoration: underline;font-size: x-large;">Standard built-in objects</a>
+        <p style="font-size: x-large;">Get to know standard built-in objects </p>
+        <p style="font-size: x-large; text-decoration: underline;"><a href="#">Array</a> , <a href="#">Boolean</a> , <a
+                href="#">Date</a> , <a href="#">Error</a> , <a href="#">JSON</a>.</p>
+    </div>
+    <div style="text-align: center;">
+
+        <div class="pagination" style="font-size: xx-large;text-align: center;">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+        
+    
+    <footer style="background-color: #AD88C6;">
+        <hr>
+        <hr>
+        <img src="https://www.javascript.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/js-logo-sm.png"
+            alt="" style="margin-left:800px;">
+    
+        <p style="font-size: x-large; text-align: center; margin-bottom:40px; ">&copy;2001-2024 JavaScript | <a href="#">about the JS</a> |
+            <a href="#">contact us</a> | <a href="#">terms of usage</a> | <a href="#">privacy policy</a>
+        </p>
+        <hr>
+        <hr>
+    </footer>
+        
+        
+
+
+
+
+
+
+
+</body>
+
+</html>
